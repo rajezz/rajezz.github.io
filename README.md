@@ -1,4 +1,6 @@
-# Rajeswaran A<img src="./profile_pic.jpg" style="zoom:4%;float:right;" />
+<img src="./profile_pic.jpg" width="200px" height="auto" />
+
+# Rajeswaran A
 
 A Full Stack Web developer aiming to leverage acquired academic knowledge and proven creative thinking, problem-solving, and multitasking skills to successfully fill the Software Developer role at your company. Looking for place where I can integrate strategies to enhance production and service by all I have got.
 
@@ -28,13 +30,13 @@ Completed **HSC** and **SSLC** in **Jose Matric Hr Secondary school**, Tirunelve
 
 ### Contact
 
-<img src="./telephone.svg" style="float:left;width:30px;height:auto;" /> +917094642080
+#### <img src="./telephone.svg" width="15px" height="auto" /> +917094642080
 
-<img src="./email.svg" style="float:left;width:30px;height:auto;" /> rajezzandrj@gmail.com
+#### <img src="./email.svg" width="15px" height="auto" /> rajezzandrj@gmail.com
 
-<img src="./facebook.svg" style="float:left;width:30px;height:auto;" />  https://www.facebook.com/rajezz.raj.92/
+#### <img src="./facebook.svg" width="15px" height="auto" />  https://www.facebook.com/rajezz.raj.92/
 
-<img src="./linkedin.svg" style="float:left;width:30px;height:auto;" /> www.linkedin.com/in/rajeswaran-a-b654a4157
+#### <img src="./linkedin.svg" width="15px" height="auto" /> www.linkedin.com/in/rajeswaran-a-b654a4157
 
 
 
