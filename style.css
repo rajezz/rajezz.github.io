@@ -30,11 +30,35 @@ html * {
 	backdrop-filter: blur(3px);
 }
 
+.info-panel {
+	position: absolute;
+	top: 700px;
+	width: 425px;
+	right: 275px;
+	/* text-align: justify; */
+}
+
 .title-panel {
 	position: absolute;
 	font-size: 100px;
 	top: 80px;
 	margin-left: 100px;
+}
+
+.educational-panel {
+	position: absolute;
+	top: 1050px;
+}
+
+.skill-panel {
+	position: absolute;
+	top: 1750px;
+	width: 100%;
+}
+.software-panel {
+	position: absolute;
+	top: 2200px;
+	width: 100%;
 }
 
 .title-panel .decorative-font {
@@ -49,7 +73,7 @@ html * {
 .card {
 	width: 300px;
 	height: 150px;
-	margin: 50px 82px;
+	margin: 50px 85px;
 	padding: 20px;
 	border-radius: 20px;
 	display: flex;
@@ -76,15 +100,11 @@ html * {
 	float: right !important;
 }
 
-.educational-panel {
-	position: absolute;
-	top: 650px;
-}
 
 .panel-header {
 	font-size: 30px;
 	color: #000000;
-	margin-bottom: 20px;
+	/* margin-bottom: 3px; */
 	text-align: center;
 }
 
@@ -174,17 +194,6 @@ a.icon-link {
 	height: 50px;
 }
 
-.skill-panel {
-	position: absolute;
-	top: 1328px;
-	width: 100%;
-}
-.software-panel {
-	position: absolute;
-	top: 1778px;
-	width: 100%;
-}
-
 .section-panel {
 	display: flex;
 	flex-direction: row;
@@ -210,6 +219,7 @@ a.icon-link {
 
 body {
 	overflow-x: hidden;
+	margin: 0px;
 }
 
 .icon-header {
@@ -220,10 +230,12 @@ body {
 	font-size: 22px;
 	font-weight: 500;
 	margin-bottom: 10px;
+	color: #20292f;
 }
 
 .section .description {
 	font-size: 15px;
+	color: #6d7c90;
 }
 
 .section:hover {
@@ -233,7 +245,7 @@ body {
 
 .footer {
 	position: absolute;
-	top: 2210px;
+	top: 2700px;
 	width: 100%;
 	height: 400px;
 	background-color: black;
@@ -276,4 +288,64 @@ body {
 
 .footer a:hover {
 	color: #8d8d8d;
+}
+
+.section:hover .title, .section:hover .description {
+    color: white;
+}
+.info-panel .panel-header {
+    text-align: inherit;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+    color: #797979;
+}
+
+.info-panel .title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.info-panel .description {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #797979;
+}
+
+.info-panel a {
+    text-decoration: none;
+    color: #009cff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+    transition: color 0.3s ease;
+}
+
+.info-panel a:hover {
+    color: #0075bf;
+}
+
+.info-panel a svg {
+    height: 20px;
+    width: auto;
+    fill: #009cff;
+    opacity: 0;
+    transform: translateY(4px) scale(0.9);
+}
+
+.info-panel a:hover svg {
+    fill: #0075bf;
+    opacity: 1;
+    transform: translateY(4px) scale(0.9);
 }
