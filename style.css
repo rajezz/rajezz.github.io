@@ -1,24 +1,5 @@
-/* Custom fonts */
-@font-face {
-	font-family: Neue Montreal;
-	src: url(assets/fonts/NeueMontreal-Medium.otf) format("otf");
-	font-weight: 500;
-	font-style: normal;
-}
-@font-face {
-	font-family: Chantelli_Antiqua;
-	src: url(assets/fonts/Chantelli_Antiqua.ttf) format("truetype");
-	font-weight: 500;
-	font-style: normal;
-}
-@font-face {
-	font-family: Roboto-Regular;
-	src: url(assets/fonts/Roboto-Regular.ttf) format("truetype");
-	font-weight: 500;
-	font-style: normal;
-}
 html * {
-	font-family: Roboto-Regular;
+	font-family: "Montserrat", sans-serif;
 }
 
 .header {
@@ -28,14 +9,27 @@ html * {
 	height: 78px;
 	z-index: 1000;
 	backdrop-filter: blur(3px);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.divider {
+	margin: 5rem;
+}
+
+.main-content {
+	position: absolute;
+	top: 700px;
+}
+.wrapper-info-panel {
+	display: flex;
+	justify-content: flex-end;
 }
 
 .info-panel {
-	position: absolute;
-	top: 700px;
 	width: 425px;
-	right: 275px;
-	/* text-align: justify; */
+	margin-right: 275px;
 }
 
 .title-panel {
@@ -46,23 +40,16 @@ html * {
 }
 
 .educational-panel {
-	position: absolute;
-	top: 1050px;
+	margin-top: 4rem;
 }
 
 .skill-panel {
-	position: absolute;
-	top: 1750px;
+	margin-top: 4rem;
 	width: 100%;
 }
 .software-panel {
-	position: absolute;
-	top: 2200px;
+	margin-top: 4rem;
 	width: 100%;
-}
-
-.title-panel .decorative-font {
-	font-family: Chantelli_Antiqua;
 }
 
 .secondary {
@@ -100,11 +87,10 @@ html * {
 	float: right !important;
 }
 
-
 .panel-header {
 	font-size: 30px;
 	color: #000000;
-	/* margin-bottom: 3px; */
+	margin-bottom: 1.5rem;
 	text-align: center;
 }
 
@@ -142,32 +128,32 @@ html * {
 	color: white;
 }
 
+a.icon-link svg {
+	fill: #79b0ff;
+	height: 20px;
+	width: 20px;
+}
+a.icon-link:hover {
+	background-color: #edf5ff;
+	color: #569cff;
+}
+a.icon-link:hover svg {
+	transform: rotateZ(10deg) scale(1.125);
+	transition: all 0.3s ease-out;
+	fill: #569cff;
+}
 a.icon-link {
-	display: inline-block;
-	height: 100%;
-	width: 24px;
 	margin: 25px 10px;
+	padding: 14px;
+	border-radius: 9999px;
+	border: 2px solid #79b0ff;
+	color: #79b0ff;
+	display: inline-flex;
+	transition: all 0.3s ease-out;
 }
 
 .icon-path {
-	fill: #3d3c3a;
 	transition: all 0.2s ease;
-}
-
-.icon-link:hover .facebook-icon-path {
-	fill: #1877f2;
-}
-
-.icon-link:hover .github-icon-path {
-	fill: #5a21c1;
-}
-
-.icon-link:hover .instagram-icon-path {
-	fill: #bd3112;
-}
-
-.icon-link:hover .linkedin-icon-path {
-	fill: #0a66c2;
 }
 
 .cover-pics-panel {
@@ -243,17 +229,18 @@ body {
 	color: white;
 }
 
+/* Footer */
+
 .footer {
-	position: absolute;
-	top: 2700px;
 	width: 100%;
-	height: 400px;
-	background-color: black;
-	color: white;
+	background-color: rgb(255, 255, 255);
+	color: rgb(82, 81, 81);
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	margin-top: 12rem;
+	margin-bottom: 1.5rem;
 }
 
 .icon-panel img {
@@ -276,12 +263,47 @@ body {
 	margin-bottom: 15px;
 }
 
+.summary {
+	font-size: 1.5rem;
+	line-height: 3rem;
+	font-weight: 700;
+	color: #ced0db;
+	letter-spacing: 0.25rem;
+	text-transform: uppercase;
+	margin: 1rem;
+}
+
+.summary .skill:hover {
+	color: #a4a6af;
+}
+.summary .skill {
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+.summary .skill::after {
+	margin-left: 10px;
+	content: "\2022";
+	color: inherit;
+}
+
+.summary .skill:last-child::after {
+	margin-left: 10px;
+	content: "";
+	color: inherit;
+}
+.copyrights {
+	font-size: 0.75rem;
+	font-weight: 500;
+	color: #b0b0b3;
+	letter-spacing: 0.325rem;
+	text-transform: uppercase;
+}
 .footer p {
 	margin: 7px;
 }
 
 .footer a {
-	color: white;
+	color: inherit;
 	text-decoration: none;
 	transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
 }
@@ -290,62 +312,63 @@ body {
 	color: #8d8d8d;
 }
 
-.section:hover .title, .section:hover .description {
-    color: white;
+.section:hover .title,
+.section:hover .description {
+	color: white;
 }
 .info-panel .panel-header {
-    text-align: inherit;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 27px;
-    color: #797979;
+	text-align: inherit;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 27px;
+	color: #797979;
 }
 
 .info-panel .title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 42px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    text-transform: capitalize;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 42px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	text-transform: capitalize;
 }
 
 .info-panel .description {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-size: 14px;
-    line-height: 27px;
-    font-weight: 300;
-    color: #797979;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	font-size: 14px;
+	line-height: 27px;
+	font-weight: 300;
+	color: #797979;
 }
 
 .info-panel a {
-    text-decoration: none;
-    color: #009cff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 27px;
-    transition: color 0.3s ease;
+	text-decoration: none;
+	color: #009cff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 27px;
+	transition: color 0.3s ease;
 }
 
 .info-panel a:hover {
-    color: #0075bf;
+	color: #0075bf;
 }
 
 .info-panel a svg {
-    height: 20px;
-    width: auto;
-    fill: #009cff;
-    opacity: 0;
-    transform: translateY(4px) scale(0.9);
+	height: 20px;
+	width: auto;
+	fill: #009cff;
+	opacity: 0;
+	transform: translateY(4px) scale(0.9);
 }
 
 .info-panel a:hover svg {
-    fill: #0075bf;
-    opacity: 1;
-    transform: translateY(4px) scale(0.9);
+	fill: #0075bf;
+	opacity: 1;
+	transform: translateY(4px) scale(0.9);
 }
