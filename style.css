@@ -277,7 +277,6 @@ body {
 	color: #a4a6af;
 }
 .summary .skill {
-	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 }
 .summary .skill::after {
